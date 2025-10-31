@@ -107,6 +107,8 @@ The module follows this naming pattern:
 
 ## Inputs
 
+## Inputs
+
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|----------|
 | resource_type | The type of Azure resource (e.g., rg, vm, st, kv) | `string` | n/a | yes |

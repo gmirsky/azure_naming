@@ -2,6 +2,8 @@
 output "resource_group_name" {
   description = "Generated resource group name"
   value       = module.resource_group_name.name
+  sensitive   = false
+  ephemeral   = false
 }
 
 # Storage Account Name
@@ -15,10 +17,16 @@ output "storage_account_name_with_dashes" {
   value       = module.storage_account_name.name
 }
 
-# Virtual Machine Name
-output "vm_name" {
+# Virtual Machine Name 1
+output "vm_name_1" {
   description = "Generated VM name with instance number"
-  value       = module.vm_name.name
+  value       = module.vm_name_1.name
+}
+
+# Virtual Machine Name 2
+output "vm_name_2" {
+  description = "Generated VM name with instance number"
+  value       = module.vm_name_2.name
 }
 
 # Key Vault Name
@@ -55,4 +63,20 @@ output "subnet_name" {
 output "region_abbreviation" {
   description = "Abbreviated region code"
   value       = module.resource_group_name.region_short
+}
+
+# Show Network Security Group Name
+output "nsg_name" {
+  description = "Generated Network Security Group name"
+  value       = module.nsg_name.name
+}
+# Show Public IP Name
+output "public_ip_name" {
+  description = "Generated Public IP name"
+  value       = module.public_ip_name.name
+}
+# Show Load Balancer Name
+output "load_balancer_name" {
+  description = "Generated Load Balancer name"
+  value       = module.load_balancer_name.name
 }
