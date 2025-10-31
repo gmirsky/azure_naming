@@ -133,25 +133,173 @@ The module follows this naming pattern:
 
 The module includes abbreviations for all major Azure regions:
 
-- US: eastus, eastus2, westus, westus2, westus3, centralus, etc.
-- Europe: northeurope, westeurope, uksouth, ukwest, etc.
-- Asia Pacific: eastasia, southeastasia, japaneast, australiaeast, etc.
-- And many more...
+- australiacentral
+- australiacentral2
+- australiaeast
+- australiasoutheast
+- brazilsouth
+- canadacentral
+- canadaeast
+- centralindia
+- centralus
+- eastasia
+- eastus
+- eastus2
+- francecentral
+- francesouth
+- germanycentral
+- germanynorth
+- japaneast
+- japanwest
+- koreacentral
+- koreasouth
+- northcentralus
+- northeurope
+- norwayeast
+- norwaywest
+- southafricanorth
+- southafricawest
+- southcentralus
+- southeastasia
+- southindia
+- switzerlandnorth
+- switzerlandwest
+- uaecentral
+- uaenorth
+- uksouth
+- ukwest
+- westcentralus
+- westeurope
+- westindia
+- westus
+- westus2
+- westus3 
 
 ## Common Resource Type Abbreviations
 
-| Resource Type | Abbreviation |
-|---------------|--------------|
-| Resource Group | rg |
-| Virtual Machine | vm |
-| Storage Account | st |
-| Key Vault | kv |
-| Virtual Network | vnet |
-| Subnet | snet |
-| Network Security Group | nsg |
-| App Service | app |
-| SQL Server | sql |
-| Azure Kubernetes Service | aks |
+|--------------|-------------------------------------------|
+| Abbreviation | Azure Resource Type                       |
+|--------------|-------------------------------------------|
+| aaa          | Azure Active Directory Application        |
+| aad          | Azure Active Directory                    |
+| aadds        | Azure Active Directory Domain Services    |
+| aadb2c       | Azure Active Directory B2C                |
+| acr          | Azure Container Registry                  |
+| acs          | Azure Container Service                   |
+| adf          | Azure Data Factory                        |
+| adls         | Azure Data Lake Storage                   |
+| afd          | Azure Front Door                          |
+| ag           | Application Gateway                       |
+| aks          | Azure Kubernetes Service                  |
+| alerts       | Azure Monitor Alerts                      |
+| am           | Azure Monitor                             |
+| amg          | Azure Managed Grafana                     |
+| analytics    | Azure Analytics                           |
+| apim         | API Management                            |
+| app          | App Service                               |
+| appconfig    | App Configuration                         |
+| appgw        | Application Gateway                       |
+| appi         | Application Insights                      |
+| apps         | App Services                              |
+| arc          | Azure Arc                                 |
+| arg          | Azure Resource Graph                      |
+| arm          | Azure Resource Manager                    |
+| as           | Availability Set                          |
+| asb          | Azure Service Bus                         |
+| asg          | Application Security Group                |
+| asp          | App Service Plan                          |
+| asse         | App Service Environment                   |
+| automation   | Azure Automation                          |
+| avd          | Azure Virtual Desktop                     |
+| azfw         | Azure Firewall                            |
+| ba           | Backup Account                            |
+| batch        | Azure Batch                               |
+| cdb          | Cosmos DB                                 |
+| cdn          | Content Delivery Network                  |
+| cer          | Certificate                               |
+| ci           | Container Instance                        |
+| cm           | Configuration Manager                     |
+| cn           | Container                                 |
+| cosmos       | Cosmos DB                                 |
+| cr           | Container Registry                        |
+| css          | Cognitive Services                        |
+| cus          | Custom                                    |
+| databox      | Azure Data Box                            |
+| databricks   | Azure Databricks                          |
+| dce          | Data Collection Endpoint                  |
+| dcr          | Data Collection Rule                      |
+| dls          | Data Lake Storage                         |
+| dns          | DNS Zone                                  |
+| er           | ExpressRoute                              |
+| evgd         | Event Grid Domain                         |
+| evh          | Event Hub                                 |
+| fd           | Front Door                                |
+| func         | Azure Function                            |
+| gal          | Gallery                                   |
+| gallery      | Shared Image Gallery                      |
+| gr           | Resource Group                            |
+| hana         | SAP HANA                                  |
+| hcp          | HPC Cache                                 |
+| hdinsight    | HDInsight                                 |
+| hpc          | High Performance Computing                |
+| hub          | Hub                                       |
+| id           | Identity                                  |
+| img          | Image                                     |
+| integration  | Integration Account                       |
+| iot          | IoT Hub                                   |
+| ip           | Public IP                                 |
+| kv           | Key Vault                                 |
+| law          | Log Analytics Workspace                   |
+| lb           | Load Balancer                             |
+| lbi          | Internal Load Balancer                    |
+| lg           | Log Analytics                             |
+| logic        | Logic App                                 |
+| managed      | Managed Identity                          |
+| map          | Azure Maps                                |
+| mc           | Managed Cluster                           |
+| ml           | Machine Learning                          |
+| monitor      | Azure Monitor                             |
+| msi          | Managed Service Identity                  |
+| mysql        | MySQL Database                            |
+| natgw        | NAT Gateway                               |
+| nsg          | Network Security Group                    |
+| nic          | Network Interface Card                    |
+| pe           | Private Endpoint                          |
+| pip          | Public IP                                 |
+| plan         | App Service Plan                          |
+| policy       | Policy                                    |
+| postgresql   | PostgreSQL Database                       |
+| private      | Private                                   |
+| public       | Public                                    |
+| redis        | Redis Cache                               |
+| rg           | Resource Group                            |
+| route        | Route Table                               |
+| rsv          | Recovery Services Vault                   |
+| rt           | Route Table                               |
+| sb           | Service Bus                               |
+| search       | Search Service                            |
+| service      | Service                                   |
+| sig          | Shared Image Gallery                      |
+| sql          | SQL Server                                |
+| sqldb        | SQL Database                              |
+| sqlmi        | SQL Managed Instance                      |
+| st           | Storage Account                           |
+| stg          | Storage                                   |
+| storage      | Storage Account                           |
+| subnet       | Subnet                                    |
+| synapse      | Azure Synapse                             |
+| tm           | Traffic Manager                           |
+| traf         | Traffic Manager                           |
+| udr          | User Defined Route                        |
+| vault        | Key Vault                                 |
+| vm           | Virtual Machine                           |
+| vmss         | Virtual Machine Scale Set                 |
+| vnet         | Virtual Network                           |
+| vng          | Virtual Network Gateway                   |
+| vpn          | VPN Gateway                               |
+| waf          | Web Application Firewall                  |
+| web          | Web App                                   |
+|--------------|-------------------------------------------|
 
 ## Examples
 
