@@ -177,7 +177,6 @@ The module includes abbreviations for all major Azure regions:
 
 ## Common Resource Type Abbreviations
 
-|--------------|-------------------------------------------|
 | Abbreviation | Azure Resource Type                       |
 |--------------|-------------------------------------------|
 | aaa          | Azure Active Directory Application        |
@@ -299,7 +298,6 @@ The module includes abbreviations for all major Azure regions:
 | vpn          | VPN Gateway                               |
 | waf          | Web Application Firewall                  |
 | web          | Web App                                   |
-|--------------|-------------------------------------------|
 
 ## Examples
 
