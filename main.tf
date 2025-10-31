@@ -61,8 +61,12 @@ locals {
   name_with_instance = var.instance_number > 0 ? "${local.prefix}${var.resource_type}-${var.workload}-${var.environment}-${local.region_short}-${format("%03d", var.instance_number)}${local.suffix}" : local.base_name
   
   # Final name, ensuring it meets length requirements if max_length is specified
+  # Note: Truncation occurs from the right, which may cut through name components.
+  # Users should ensure max_length is sufficient to preserve meaningful identifiers.
   final_name = var.max_length > 0 ? substr(local.name_with_instance, 0, var.max_length) : local.name_with_instance
   
   # Generate name without dashes (for storage accounts, etc.)
+  # Note: For resources with strict length limits (e.g., storage accounts with 24 chars),
+  # ensure max_length is set appropriately before dash removal to maintain valid names.
   name_no_dashes = replace(local.final_name, "-", "")
 }

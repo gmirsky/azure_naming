@@ -18,6 +18,24 @@ variable "environment" {
 variable "location" {
   description = "Azure region where the resource will be deployed"
   type        = string
+
+  validation {
+    condition = contains([
+      "eastus", "eastus2", "westus", "westus2", "westus3",
+      "centralus", "northcentralus", "southcentralus", "westcentralus",
+      "canadacentral", "canadaeast", "brazilsouth",
+      "northeurope", "westeurope", "uksouth", "ukwest",
+      "francecentral", "francesouth", "germanycentral", "germanynorth",
+      "switzerlandnorth", "switzerlandwest", "norwayeast", "norwaywest",
+      "eastasia", "southeastasia", "japaneast", "japanwest",
+      "australiaeast", "australiasoutheast", "australiacentral", "australiacentral2",
+      "centralindia", "southindia", "westindia",
+      "koreacentral", "koreasouth",
+      "uaenorth", "uaecentral",
+      "southafricanorth", "southafricawest"
+    ], var.location)
+    error_message = "Location must be a valid Azure region. See the README for supported regions."
+  }
 }
 
 # Optional Variables
