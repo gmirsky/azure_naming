@@ -1,0 +1,4 @@
+provider "random" {
+  # Configuration options
+}
+#

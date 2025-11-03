@@ -45,10 +45,10 @@ locals {
   }
   # Get region abbreviation or use full name if not found
   region_short = lookup(
-    local.region_abbreviations, 
-    var.location, 
+    local.region_abbreviations,
+    var.location,
     var.location
-    )
+  )
   # Build name components
   prefix = var.prefix != "${var.empty_string}" ? "${var.prefix}${var.dash}" : "${var.empty_string}"
   suffix = var.suffix != "${var.empty_string}" ? "${var.dash}${var.suffix}" : "${var.empty_string}"
@@ -61,12 +61,15 @@ locals {
   # Users should ensure max_length is sufficient to preserve meaningful identifiers.
   final_name = var.max_length > 0 ? substr(local.name_with_instance, 0, var.max_length) : local.name_with_instance
   # Generate name without dashes (for storage accounts, etc.)
-  # Note: For resources with strict length limits (e.g., storage accounts with 24 chars),
+  # Note: For resources with strict length limits (e.g., storage accounts with 24 characters),
   # ensure max_length is set appropriately before dash removal to maintain valid names.
-  name_no_dashes = replace(
-    local.final_name,
-     "${var.dash}",
+  name_no_dashes = substr(
+    replace(
+      local.name_with_instance,
+      "${var.dash}",
       "${var.empty_string}"
-      )
+    ),
+    0,
+  var.max_length)
 }
 # 
